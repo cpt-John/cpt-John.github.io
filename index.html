@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark px-5">
+      <p
+        class="navbar-brand p-0 m-0"
+        style="
+          font-family: 'Noto Serif', serif;
+          font-style: italic;
+          font-size: 2em;
+        "
+      >
+        JOHN FRANCIS
+      </p>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto pr-5">
+          <li class="nav-item">
+            <a class="nav-link" onclick="scrollTo_('about')" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="scrollTo_('education')" href="#"
+              >Education</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="scrollTo_('experience')" href="#"
+              >Experience</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="scrollTo_('projects')" href="#"
+              >Projects&Skills</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="scrollTo_('contact')" href="#"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container mt-5 pt-5">
+      <div id="about"></div>
+      <div class="mb-5"></div>
+      <div class="row border border-dark p-5 mb-5">
+        <div class="col-4">
+          <img
+            src="./resources/imgs/Capture.PNG"
+            alt=""
+            class="img-fluid rounded"
+            style="border: 3px solid grey;"
+          />
+        </div>
+        <div class="col-8 bg-light">
+          <div class="text-left pt-5">
+            <h1
+              class="cover-heading mb-3"
+              style="font-family: 'Noto Serif', serif; font-style: italic;"
+            >
+              About Me
+            </h1>
+            <p class="lead">
+              I'm an aspiring Web Developer who also likes to play the guitar
+              and listen to music . I would like to pursue a highly rewarding
+              career, seeking for a job in challenging and healthy work
+              environment where I can utilize my skills and knowledge effciently
+              for organizational growth.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row border border-dark p-5 justify-content-center mb-5"
+        id="education"
+      >
+        <div class="col-8 text-center bg-light">
+          <h1
+            class="cover-heading mb-3"
+            style="font-family: 'Noto Serif', serif; font-style: italic;"
+          >
+            Education
+          </h1>
+          <p class="mt-5 h5">
+            Degree in B.E Mechanical
+
+            <br />
+            Anna University,Chennai
+          </p>
+          <p>
+            Year of passing - 2017 from CSI College of Engineering ,The
+            Nilgiris,TamilNadu with a CGPA of 7.44
+          </p>
+          <p class="mt-5 h5">
+            HSC
+
+            <br />
+            State board
+          </p>
+          <p>
+            Year of passing - 2013 from St.Joseph's Boys HSS , Coonoor,The
+            Nilgiris,TamilNadu with 84%
+          </p>
+          <p class="mt-5 h5">
+            SSLC
+            <br />
+            State board
+          </p>
+          <p>
+            Year of passing - 2011 from St.Joseph's Boys HSS , Coonoor,The
+            Nilgiris,TamilNadu with 88%
+          </p>
+        </div>
+      </div>
+      <div
+        class="row border border-dark p-5 justify-content-center mb-5"
+        id="experience"
+      >
+        <div class="col-8 text-center bg-light">
+          <h1
+            class="cover-heading mb-3"
+            style="font-family: 'Noto Serif', serif; font-style: italic;"
+          >
+            Work Experience
+          </h1>
+          <p class="mt-5 h5">
+            April,2018 - March,2019
+          </p>
+          <p class="lead">
+            Quality Inspection(On-Site Supplier-End and In-House) at AQUASUB
+            ENGINEERING (TEXMO/AQUATEX) Coiambatore,TamilNadu,India
+          </p>
+          <p class="mt-5 h5">
+            April,2020 - Present
+          </p>
+          <p class="lead">
+            Intenship as Web Developer in GUVI , Chennai.
+          </p>
+        </div>
+      </div>
+      <div
+        class="row border border-dark p-5 justify-content-center mb-5"
+        id="projects"
+      >
+        <div class="col-12 bg-light">
+          <h1
+            class="cover-heading mb-3"
+            style="font-family: 'Noto Serif', serif; font-style: italic;"
+          >
+            Projects
+          </h1>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div class="card p-3" style="height: 100%;">
+                <img
+                  class="card-img-top img-thumbnail"
+                  src="./resources/imgs/space_surf.PNG"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">SpaceSurf Game</h5>
+                  <p class="card-text">
+                    A Casual Android Game developed in Unity3D and C#
+                  </p>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.PicellPlay.SpaceSurf&hl=en"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card p-3" style="height: 100%;">
+                <img
+                  class="card-img-top img-thumbnail"
+                  src="./resources/imgs/url_shortner.PNG"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">URL Shortner</h5>
+                  <p class="card-text">
+                    A url shortner app with register,login-logout features
+                  </p>
+                  <a
+                    href="https://urlshortner-frontend-johnfrancis.netlify.app"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card p-3" style="height: 100%;">
+                <img
+                  class="card-img-top img-thumbnail"
+                  src="./resources/imgs/search_engine.PNG"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Search Engine</h5>
+                  <p class="card-text">
+                    A simple search engine using mongodb , node.js and angular
+                  </p>
+                  <a
+                    href="https://searchengine-application.netlify.app"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card p-3" style="height: 100%;">
+                <img
+                  class="card-img-top img-thumbnail"
+                  src="./resources/imgs/covid.PNG"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Covid19 Visualizer</h5>
+                  <p class="card-text">
+                    A covid19 visualizer for India using interactive charts
+                  </p>
+                  <a
+                    href="https://covid19-visualizer-johnfrancis.netlify.app"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card p-3" style="height: 100%;">
+                <img
+                  class="img-thumbnail"
+                  src="./resources/imgs/freshdesk.PNG"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">FreshDesk Api</h5>
+                  <p class="card-text">
+                    A FreshDesk App using Freshdesk Api using http methods
+                  </p>
+                  <a
+                    href="https://xenodochial-newton-7f6ecd.netlify.app/login.html"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card p-3" style="height: 100%;">
+                <img
+                  class="img-thumbnail"
+                  src="./resources/imgs/nyt.PNG"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">NewYorkTimes Api</h5>
+                  <p class="card-text">
+                    A NYT top stories App using nyt Api
+                  </p>
+                  <a
+                    href="https://festive-bose-df2dbd.netlify.app/day_20_assessment/top_stories_collapse.html"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1
+            class="cover-heading mb-3"
+            style="font-family: 'Noto Serif', serif; font-style: italic;"
+          >
+            Technologies
+          </h1>
+          <div class="d-flex flex-wrap">
+            <div class="p-3 text-center">
+              <img
+                src="./resources/icons/angular.png"
+                alt="angular"
+                class="tec"
+              />
+              <p class="font-weight-bold">Angular</p>
+            </div>
+            <div class="p-3 text-center">
+              <img
+                src="./resources/icons/bootstrap.png"
+                alt="angular"
+                class="tec"
+              />
+              <p class="font-weight-bold">Bootstrap</p>
+            </div>
+            <div class="p-3 text-center">
+              <img src="./resources/icons/js.png" alt="angular" class="tec" />
+              <p class="font-weight-bold">JavaScript</p>
+            </div>
+            <div class="p-3 text-center">
+              <img
+                src="./resources/icons/nodejs.png"
+                alt="angular"
+                class="tec"
+              />
+              <p class="font-weight-bold">Nodejs</p>
+            </div>
+            <div class="p-3 text-center">
+              <img
+                src="./resources/icons/python.png"
+                alt="angular"
+                class="tec"
+              />
+              <p class="font-weight-bold">Python</p>
+            </div>
+            <div class="p-3 text-center">
+              <img
+                src="./resources/icons/css&html.png"
+                alt="angular"
+                style="height: 4em;"
+              />
+              <p class="font-weight-bold">Html&Css</p>
+            </div>
+            <div class="p-3 text-center">
+              <img src="./resources/icons/ts.png" alt="angular" class="tec" />
+              <p class="font-weight-bold">TypeScript</p>
+            </div>
+            <div class="p-3 text-center">
+              <img src="./resources/icons/git.png" alt="angular" class="tec" />
+              <p class="font-weight-bold">Git</p>
+            </div>
+            <div class="p-3 text-center">
+              <img
+                src="./resources/icons/unity.png"
+                alt="angular"
+                class="tec"
+              />
+              <p class="font-weight-bold">Unity3D</p>
+            </div>
+            <div class="p-3 text-center">
+              <img src="./resources/icons/ps.png" alt="angular" class="tec" />
+              <p class="font-weight-bold">PhotoShop</p>
+            </div>
+            <div class="p-3 text-center">
+              <img
+                src="./resources/icons/blender.png"
+                alt="angular"
+                class="tec"
+              />
+              <p class="font-weight-bold">Blender3D</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row border border-dark p-5 justify-items-center mb-5"
+        id="contact"
+      >
+        <div class="col-12 bg-light">
+          <h1
+            class="cover-heading mb-1"
+            style="font-family: 'Noto Serif', serif; font-style: italic;"
+          >
+            Contact Me :
+          </h1>
+          <div class="row mt-3">
+            <div class="col d-inline-flex">
+              <i
+                class="fa fa-phone-square fa-lg fa-2x mr-2 text-primary"
+                aria-hidden="true"
+              ></i>
+              <p
+                class="align-self-end"
+                style="font-family: 'Noto Serif', serif; font-size: 1.5em;"
+              >
+                +91-9488835026
+              </p>
+            </div>
+          </div>
+          <!-- Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-12">
+              <div class="mb-5 flex-center">
+                <!-- Facebook -->
+                <a
+                  class="btn"
+                  href="https://www.facebook.com/johnfrancispullikotil"
+                  target="_blank"
+                >
+                  <i
+                    class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"
+                  >
+                  </i>
+                </a>
+                <!-- Google plus-->
+                <a class="btn" href="#" target="_blank">
+                  <i
+                    class="fab fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"
+                  >
+                  </i>
+                </a>
+                <!--Linkedin -->
+                <a
+                  class="btn"
+                  href="https://www.linkedin.com/in/john-francis-526999148/"
+                  target="_blank"
+                >
+                  <i
+                    class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"
+                  >
+                  </i>
+                </a>
+                <!--Instagram-->
+                <a
+                  class="btn"
+                  href="https://www.instagram.com/munchkin_.man/"
+                  target="_blank"
+                >
+                  <i
+                    class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"
+                  >
+                  </i>
+                </a>
+              </div>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-2">
+      <p>© 2020 Copyright:John Francis</p>
+    </div>
+    <!-- Copyright -->
+  </body>
+</html>
