@@ -1,321 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
     <link
+      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      type="text/css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
       rel="stylesheet"
+      type="text/css"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    />
-    <script src="index.js"></script>
-    <link rel="stylesheet" href="./index.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark px-5">
-      <p
-        class="navbar-brand p-0 m-0"
-        style="
-          font-family: 'Noto Serif', serif;
-          font-style: italic;
-          font-size: 2em;
-        "
-      >
-        JOHN FRANCIS
-      </p>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+      id="sideNav"
+    >
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">JOHN FRANCIS</span>
+        <span class="d-none d-lg-block"
+          ><img
+            class="img-fluid img-profile rounded-circle mx-auto mb-2"
+            src="./resources/imgs/Capture.PNG"
+            alt=""
+        /></span>
+      </a>
       <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarCollapse"
-        aria-controls="navbarCollapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto pr-5">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" onclick="scrollTo_('about')" href="#">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" onclick="scrollTo_('education')" href="#"
-              >Education</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" onclick="scrollTo_('experience')" href="#"
+            <a class="nav-link js-scroll-trigger" href="#experience"
               >Experience</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" onclick="scrollTo_('projects')" href="#"
-              >Projects&Skills</a
+            <a class="nav-link js-scroll-trigger" href="#education"
+              >Education</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" onclick="scrollTo_('contact')" href="#"
-              >Contact</a
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests"
+              >Interests</a
             >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="container mt-5 pt-5">
-      <div id="about"></div>
-      <div class="mb-5"></div>
-      <div class="row border border-dark p-5 mb-5">
-        <div class="col-4">
-          <img
-            src="./resources/imgs/Capture.PNG"
-            alt=""
-            class="img-fluid rounded"
-            style="border: 3px solid grey;"
-          />
-        </div>
-        <div class="col-8 bg-light">
-          <div class="text-left pt-5">
-            <h1
-              class="cover-heading mb-3"
-              style="font-family: 'Noto Serif', serif; font-style: italic;"
-            >
-              About Me
-            </h1>
-            <p class="lead">
-              I'm an aspiring Web Developer who also likes to play the guitar
-              and listen to music . I would like to pursue a highly rewarding
-              career, seeking for a job in challenging and healthy work
-              environment where I can utilize my skills and knowledge effciently
-              for organizational growth.
-            </p>
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+      <!-- About-->
+      <section class="resume-section" id="about">
+        <div class="resume-section-content">
+          <h1 class="mb-0">
+            John
+            <span class="text-primary">Francis</span>
+          </h1>
+          <div class="subheading mb-5">
+            195-ReillyCompound, Coonoor, Nilgiris, TamilNadu, India.
+            <br />+91-9488835026 <br />
+          </div>
+          <p class="lead mb-5">
+            I'm an aspiring Web Developer who would like to pursue a highly
+            rewarding career, seeking for a job in challenging and healthy work
+            environment where I can utilize my skills and knowledge effciently
+            for organizational growth.
+          </p>
+          <div class="social-icons">
+            <a class="social-icon" href="#" id="linkedin-profile"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a class="social-icon" href="#" id="github-profile"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a class="social-icon" href="#" id="gmail-send"
+              ><i class="far fa-envelope"></i
+            ></a>
+            <a class="social-icon" href="#" id="fb-profile"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="social-icon" href="#" id="ig-profile"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </div>
         </div>
-      </div>
-      <div
-        class="row border border-dark p-5 justify-content-center mb-5"
-        id="education"
-      >
-        <div class="col-8 text-center bg-light">
-          <h1
-            class="cover-heading mb-3"
-            style="font-family: 'Noto Serif', serif; font-style: italic;"
+      </section>
+      <hr class="m-0" />
+      <!-- Experience-->
+      <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Experience</h2>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
           >
-            Education
-          </h1>
-          <p class="mt-5 h5">
-            Degree in B.E Mechanical
-
-            <br />
-            Anna University,Chennai
-          </p>
-          <p>
-            Year of passing - 2017 from CSI College of Engineering ,The
-            Nilgiris,TamilNadu with a CGPA of 7.44
-          </p>
-          <p class="mt-5 h5">
-            HSC
-
-            <br />
-            State board
-          </p>
-          <p>
-            Year of passing - 2013 from St.Joseph's Boys HSS , Coonoor,The
-            Nilgiris,TamilNadu with 84%
-          </p>
-          <p class="mt-5 h5">
-            SSLC
-            <br />
-            State board
-          </p>
-          <p>
-            Year of passing - 2011 from St.Joseph's Boys HSS , Coonoor,The
-            Nilgiris,TamilNadu with 88%
-          </p>
-        </div>
-      </div>
-      <div
-        class="row border border-dark p-5 justify-content-center mb-5"
-        id="experience"
-      >
-        <div class="col-8 text-center bg-light">
-          <h1
-            class="cover-heading mb-3"
-            style="font-family: 'Noto Serif', serif; font-style: italic;"
-          >
-            Work Experience
-          </h1>
-          <p class="mt-5 h5">
-            April,2018 - March,2019
-          </p>
-          <p class="lead">
-            Quality Inspection(On-Site Supplier-End and In-House) at AQUASUB
-            ENGINEERING (TEXMO/AQUATEX) Coiambatore,TamilNadu,India
-          </p>
-          <p class="mt-5 h5">
-            April,2020 - Present
-          </p>
-          <p class="lead">
-            Intenship as Web Developer in GUVI , Chennai.
-          </p>
-        </div>
-      </div>
-      <div
-        class="row border border-dark p-5 justify-content-center mb-5"
-        id="projects"
-      >
-        <div class="col-12 bg-light">
-          <h1
-            class="cover-heading mb-3"
-            style="font-family: 'Noto Serif', serif; font-style: italic;"
-          >
-            Projects
-          </h1>
-          <div class="row">
-            <div class="col-md-4 mb-3">
-              <div class="card p-3" style="height: 100%;">
-                <img
-                  class="card-img-top img-thumbnail"
-                  src="./resources/imgs/space_surf.PNG"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">SpaceSurf Game</h5>
-                  <p class="card-text">
-                    A Casual Android Game developed in Unity3D and C#
-                  </p>
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.PicellPlay.SpaceSurf&hl=en"
-                    class="btn btn-primary"
-                    target="_blank"
-                    >View Project</a
-                  >
-                </div>
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Quality Control Inspector</h3>
+              <div class="subheading mb-3">
+                Aquasub Engineering(TEXMO/AQUATEX)
               </div>
+              <p>
+                Quality Inspection On-Site Supplier-End and In-House Quality
+                Control.
+              </p>
             </div>
-            <div class="col-md-4 mb-3">
-              <div class="card p-3" style="height: 100%;">
-                <img
-                  class="card-img-top img-thumbnail"
-                  src="./resources/imgs/url_shortner.PNG"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">URL Shortner</h5>
-                  <p class="card-text">
-                    A url shortner app with register,login-logout features
-                  </p>
-                  <a
-                    href="https://urlshortner-frontend-johnfrancis.netlify.app"
-                    class="btn btn-primary"
-                    target="_blank"
-                    >View Project</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card p-3" style="height: 100%;">
-                <img
-                  class="card-img-top img-thumbnail"
-                  src="./resources/imgs/search_engine.PNG"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Search Engine</h5>
-                  <p class="card-text">
-                    A simple search engine using mongodb , node.js and angular
-                  </p>
-                  <a
-                    href="https://searchengine-application.netlify.app"
-                    class="btn btn-primary"
-                    target="_blank"
-                    >View Project</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card p-3" style="height: 100%;">
-                <img
-                  class="card-img-top img-thumbnail"
-                  src="./resources/imgs/covid.PNG"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Covid19 Visualizer</h5>
-                  <p class="card-text">
-                    A covid19 visualizer for India using interactive charts
-                  </p>
-                  <a
-                    href="https://covid19-visualizer-johnfrancis.netlify.app"
-                    class="btn btn-primary"
-                    target="_blank"
-                    >View Project</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card p-3" style="height: 100%;">
-                <img
-                  class="img-thumbnail"
-                  src="./resources/imgs/freshdesk.PNG"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">FreshDesk Api</h5>
-                  <p class="card-text">
-                    A FreshDesk App using Freshdesk Api using http methods
-                  </p>
-                  <a
-                    href="https://xenodochial-newton-7f6ecd.netlify.app/login.html"
-                    class="btn btn-primary"
-                    target="_blank"
-                    >View Project</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card p-3" style="height: 100%;">
-                <img
-                  class="img-thumbnail"
-                  src="./resources/imgs/nyt.PNG"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">NewYorkTimes Api</h5>
-                  <p class="card-text">
-                    A NYT top stories App using nyt Api
-                  </p>
-                  <a
-                    href="https://festive-bose-df2dbd.netlify.app/day_20_assessment/top_stories_collapse.html"
-                    class="btn btn-primary"
-                    target="_blank"
-                    >View Project</a
-                  >
-                </div>
-              </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">April,2018 - March,2019</span>
             </div>
           </div>
-          <h1
-            class="cover-heading mb-3"
-            style="font-family: 'Noto Serif', serif; font-style: italic;"
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
           >
-            Technologies
-          </h1>
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Web Developement Intern</h3>
+              <div class="subheading mb-3">GUVI , Chennai.</div>
+              <p>
+                Developing responsive webpages using jQuery and bootstrap and
+                connecting to SQL database .
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">April,2020 - Present</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Education-->
+      <section class="resume-section" id="education">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Education</h2>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">GUVI ,Chennai</h3>
+              <div class="subheading mb-3">Full Stack Web Development</div>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">2020 April - July</span>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="flex-grow-1">
+              <h3 class="mb-0">Anna University,Chennai</h3>
+              <div class="subheading mb-3">Degree in B.E Mechanical</div>
+              <div>CSI College of Engineering ,The Nilgiris,</div>
+              <p>CGPA: 7.44</p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">Year of passing - 2017</span>
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">St.Joseph's Boys HSS , Coonoor</h3>
+              <div class="subheading mb-3">HSC</div>
+              <p>84%</p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">Year of passing - 2013</span>
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="flex-grow-1">
+              <h3 class="mb-0">St.Joseph's Boys HSS , Coonoor</h3>
+              <div class="subheading mb-3">SSLC</div>
+              <p>88%</p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class="text-primary">Year of passing - 2011</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Skills-->
+      <section class="resume-section" id="skills">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Skills</h2>
+          <div class="subheading mb-3">Programming Languages & Tools</div>
           <div class="d-flex flex-wrap">
             <div class="p-3 text-center">
               <img
@@ -406,90 +311,226 @@
               <p class="font-weight-bold">Blender3D</p>
             </div>
           </div>
+          <div class="subheading mb-3">Workflow</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>
+              Responsive Design
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>
+              Cross Browser Testing & Debugging
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>
+              API testing
+            </li>
+          </ul>
         </div>
-      </div>
-      <div
-        class="row border border-dark p-5 justify-items-center mb-5"
-        id="contact"
-      >
-        <div class="col-12 bg-light">
-          <h1
-            class="cover-heading mb-1"
-            style="font-family: 'Noto Serif', serif; font-style: italic;"
-          >
-            Contact Me :
-          </h1>
-          <div class="row mt-3">
-            <div class="col d-inline-flex">
-              <i
-                class="fa fa-phone-square fa-lg fa-2x mr-2 text-primary"
-                aria-hidden="true"
-              ></i>
-              <p
-                class="align-self-end"
-                style="font-family: 'Noto Serif', serif; font-size: 1.5em;"
-              >
-                +91-9488835026
-              </p>
-            </div>
-          </div>
-          <!-- Grid row-->
-          <div class="row">
-            <!-- Grid column -->
-            <div class="col-md-12">
-              <div class="mb-5 flex-center">
-                <!-- Facebook -->
-                <a
-                  class="btn"
-                  href="https://www.facebook.com/johnfrancispullikotil"
-                  target="_blank"
-                >
-                  <i
-                    class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"
-                  >
-                  </i>
-                </a>
-                <!-- Google plus-->
-                <a class="btn" href="#" target="_blank">
-                  <i
-                    class="fab fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"
-                  >
-                  </i>
-                </a>
-                <!--Linkedin -->
-                <a
-                  class="btn"
-                  href="https://www.linkedin.com/in/john-francis-526999148/"
-                  target="_blank"
-                >
-                  <i
-                    class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"
-                  >
-                  </i>
-                </a>
-                <!--Instagram-->
-                <a
-                  class="btn"
-                  href="https://www.instagram.com/munchkin_.man/"
-                  target="_blank"
-                >
-                  <i
-                    class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"
-                  >
-                  </i>
-                </a>
+      </section>
+      <hr class="m-0" />
+      <!-- Interests-->
+      <section class="resume-section" id="interests">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Interests</h2>
+          <p>
+            Apart from being a web developer, I enjoy playing Guitar. I also
+            like to play football. When indoors i enjoy playing chess ,
+            videogams and reading books.
+          </p>
+        </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Awards-->
+      <section class="resume-section" id="awards">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Awards & Certifications</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-trophy text-warning"></i
+              ></span>
+              2
+              <sup>nd</sup>
+              Place - GUVI - Hackathon May 18, 2020(FreshDesk API and frontend)
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fas fa-trophy text-warning"></i
+              ></span>
+              3
+              <sup>rd</sup>
+              Place - GUVI - Hackathon June 23, 2020(Search Engine with crawler
+              and frontend)
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Projects-->
+      <section class="resume-section" id="projects">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Projects</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card p-3" style="height: 100%;">
+                  <img
+                    class="card-img-top img-thumbnail"
+                    src="./resources/imgs/space_surf.PNG"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">SpaceSurf Game</h5>
+                    <p class="card-text">
+                      A Casual Android Game developed in Unity3D and C#
+                    </p>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.PicellPlay.SpaceSurf&hl=en"
+                      class="btn btn-primary"
+                      target="_blank"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card p-3" style="height: 100%;">
+                  <img
+                    class="card-img-top img-thumbnail"
+                    src="./resources/imgs/url_shortner.PNG"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">URL Shortner</h5>
+                    <p class="card-text">
+                      A url shortner app with register,login-logout features
+                    </p>
+                    <a
+                      href="https://urlshortner-frontend-johnfrancis.netlify.app"
+                      class="btn btn-primary"
+                      target="_blank"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card p-3" style="height: 100%;">
+                  <img
+                    class="card-img-top img-thumbnail"
+                    src="./resources/imgs/search_engine.PNG"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Search Engine</h5>
+                    <p class="card-text">
+                      A simple search engine using mongodb , node.js and angular
+                    </p>
+                    <a
+                      href="https://searchengine-application.netlify.app"
+                      class="btn btn-primary"
+                      target="_blank"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card p-3" style="height: 100%;">
+                  <img
+                    class="card-img-top img-thumbnail"
+                    src="./resources/imgs/covid.PNG"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Covid19 Visualizer</h5>
+                    <p class="card-text">
+                      A covid19 visualizer for India using interactive charts
+                    </p>
+                    <a
+                      href="https://covid19-visualizer-johnfrancis.netlify.app"
+                      class="btn btn-primary"
+                      target="_blank"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card p-3" style="height: 100%;">
+                  <img
+                    class="card-img-top img-thumbnail"
+                    src="./resources/imgs/videocall.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Video Confrence app</h5>
+                    <p class="card-text">
+                      A video confrencing app using socket io and Web RTC
+                    </p>
+                    <a
+                      href="https://john-videocall.herokuapp.com/createRoom"
+                      class="btn btn-primary"
+                      target="_blank"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card p-3" style="height: 100%;">
+                  <img
+                    class="img-thumbnail"
+                    src="./resources/imgs/freshdesk.PNG"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">FreshDesk Api</h5>
+                    <p class="card-text">
+                      A FreshDesk App using Freshdesk Api using http methods
+                    </p>
+                    <a
+                      href="https://xenodochial-newton-7f6ecd.netlify.app/login.html"
+                      class="btn btn-primary"
+                      target="_blank"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card p-3" style="height: 100%;">
+                  <img
+                    class="img-thumbnail"
+                    src="./resources/imgs/nyt.PNG"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">NewYorkTimes Api</h5>
+                    <p class="card-text">
+                      A NYT top stories App using nyt Api
+                    </p>
+                    <a
+                      href="https://festive-bose-df2dbd.netlify.app/day_20_assessment/top_stories_collapse.html"
+                      class="btn btn-primary"
+                      target="_blank"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- Grid column -->
           </div>
-          <!-- Grid row-->
         </div>
-      </div>
+      </section>
+      <hr class="m-0" />
     </div>
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-2">
-      <p>© 2020 Copyright:John Francis</p>
-    </div>
-    <!-- Copyright -->
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
   </body>
 </html>
