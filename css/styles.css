@@ -10560,3 +10560,45 @@ section.resume-section .resume-section-content {
   height: 4em;
   width: 4em;
 }
+.tec-small {
+  height: 2em;
+  width: 2em;
+  padding: 2px;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.fade-in {
+  animation: 0.5s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes popIN {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(50%);
+  }
+}
+
+.pop-in {
+  animation: 0.5s ease-out 0s 1 popIN;
+}
+
+.second-bg{
+  border-radius: 5px;
+  background-color: #cccccc;
+  border: 3px solid #a3a3a3;
+}
+.third-bg{
+  border-radius: 5px;
+  background-color: #eba652;
+  border: 3px solid #c4883f;
+}
