@@ -10605,7 +10605,10 @@ section.resume-section .resume-section-content {
 
 /* background */
 .bg {
+  display: block;
   animation: slide 3s ease-in-out infinite alternate;
+  -webkit-animation:slide 3s ease-in-out infinite alternate ;
+  -moz-animation: slide 3s ease-in-out infinite alternate ;
   background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
   bottom: 0;
   left: -50%;
@@ -10617,6 +10620,7 @@ section.resume-section .resume-section-content {
 }
 
 .bg2 {
+  display: block;
   animation-direction: alternate-reverse;
   animation-duration: 4s;
 }
@@ -10634,16 +10638,17 @@ section.resume-section .resume-section-content {
   transform: translate(-50%, -50%);
 }
 
-h1 {
-  font-family: monospace;
-}
 
 @keyframes slide {
   0% {
     transform: translateX(-25%);
+    -moz-transform: translateX(-25%);
+    -webkit-transform: translateX(-25%); ;
   }
   100% {
     transform: translateX(25%);
+    -moz-transform:translateX(25%);
+    -webkit-transform:translateX(25%);
   }
 }
 
