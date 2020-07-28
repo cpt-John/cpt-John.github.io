@@ -31,9 +31,11 @@
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body id="page-top">
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
     <!-- Navigation-->
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-lg"
       id="sideNav"
     >
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -122,9 +124,9 @@
     <!-- About-->
     <template>
       <section class="resume-section">
-        <div class="resume-section-content">
-          <h1 class="mb-0 fade-in none">
-            John
+        <div class="resume-section-content bg-light p-5 rounded shadow-lg">
+          <h1 class="mb-0 fade-in none title-name">
+            <span>John</span>
             <span class="text-primary">Francis</span>
           </h1>
           <div class="subheading mb-5 fade-in none">
@@ -153,6 +155,11 @@
             <a class="social-icon pop-in none" href="#" id="ig-profile"
               ><i class="fab fa-instagram"></i
             ></a>
+            <a href="./resources/resume/resume.pdf" download="resume.pdf"
+              ><button type="button" class="btn btn-primary">
+                <i class="fas fa-download"></i>Resume
+              </button></a
+            >
           </div>
         </div>
       </section>
@@ -160,11 +167,11 @@
     <!-- Experience--><template>
       <section class="resume-section" id="experience">
         <div class="resume-section-content">
-          <h2 class="mb-5 fade-in none">Experience</h2>
+          <h2 class="mb-5">Experience</h2>
           <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+            class="d-flex flex-column flex-md-row justify-content-between mb-5 bg-light p-5 rounded shadow-lg fade-in none"
           >
-            <div class="flex-grow-1 fade-in none">
+            <div class="flex-grow-1">
               <h3 class="mb-0">Quality Control Inspector</h3>
               <div class="subheading mb-3">
                 Aquasub Engineering(TEXMO/AQUATEX)
@@ -174,14 +181,14 @@
                 Control.
               </p>
             </div>
-            <div class="flex-shrink-0 fade-in none">
+            <div class="flex-shrink-0">
               <span class="text-primary">April,2018 - March,2019</span>
             </div>
           </div>
           <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5"
+            class="d-flex flex-column flex-md-row justify-content-between mb-5 bg-light p-5 rounded shadow-lg fade-in none"
           >
-            <div class="flex-grow-1 fade-in none">
+            <div class="flex-grow-1">
               <h3 class="mb-0">Web Developement Intern</h3>
               <div class="subheading mb-3">GUVI , Chennai.</div>
               <p>
@@ -189,7 +196,7 @@
                 connecting to SQL database .
               </p>
             </div>
-            <div class="flex-shrink-0 fade-in none">
+            <div class="flex-shrink-0">
               <span class="text-primary">April,2020 - Present</span>
             </div>
           </div>
@@ -199,9 +206,9 @@
     <!-- Education--><template>
       <section class="resume-section" id="education">
         <div class="resume-section-content">
-          <h2 class="mb-5 fade-in none">Education</h2>
+          <h2 class="mb-5">Education</h2>
           <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5 fade-in none"
+            class="d-flex flex-column flex-md-row justify-content-between mb-5 bg-light p-5 rounded shadow-lg fade-in none"
           >
             <div class="flex-grow-1">
               <h3 class="mb-0">GUVI ,Chennai</h3>
@@ -212,7 +219,7 @@
             </div>
           </div>
           <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5 fade-in none"
+            class="d-flex flex-column flex-md-row justify-content-between mb-5 bg-light p-5 rounded shadow-lg fade-in none"
           >
             <div class="flex-grow-1">
               <h3 class="mb-0">Anna University,Chennai</h3>
@@ -225,7 +232,7 @@
             </div>
           </div>
           <div
-            class="d-flex flex-column flex-md-row justify-content-between fade-in none"
+            class="d-flex flex-column flex-md-row justify-content-between mb-5 bg-light p-5 rounded shadow-lg fade-in none"
           >
             <div class="flex-grow-1">
               <h3 class="mb-0">St.Joseph's Boys HSS , Coonoor</h3>
@@ -237,7 +244,7 @@
             </div>
           </div>
           <div
-            class="d-flex flex-column flex-md-row justify-content-between fade-in none"
+            class="d-flex flex-column flex-md-row justify-content-between mb-5 bg-light p-5 rounded shadow-lg fade-in none"
           >
             <div class="flex-grow-1">
               <h3 class="mb-0">St.Joseph's Boys HSS , Coonoor</h3>
@@ -255,123 +262,133 @@
       <section class="resume-section" id="skills">
         <div class="resume-section-content">
           <h2 class="mb-5">Skills</h2>
-          <div class="subheading mb-3">Programming Languages & Tools</div>
-          <div class="d-flex flex-wrap">
-            <div class="p-3 text-center pop-in none">
-              <img
-                src="./resources/icons/angular.png"
-                alt="angular"
-                class="tec"
-              />
-              <p class="font-weight-bold">Angular</p>
-            </div>
-            <div class="p-3 text-center pop-in none">
-              <img
-                src="./resources/icons/bootstrap.png"
-                alt="angular"
-                class="tec"
-              />
-              <p class="font-weight-bold">Bootstrap</p>
-            </div>
-            <div class="p-3 text-center pop-in none">
-              <img src="./resources/icons/js.png" alt="angular" class="tec" />
-              <p class="font-weight-bold">JavaScript</p>
-            </div>
-            <div class="p-3 text-center pop-in none">
-              <img
-                src="./resources/icons/nodejs.png"
-                alt="angular"
-                class="tec"
-              />
-              <p class="font-weight-bold">Nodejs</p>
-            </div>
-            <div class="p-3 text-center pop-in none">
-              <img
-                src="./resources/icons/python.png"
-                alt="angular"
-                class="tec"
-              />
-              <p class="font-weight-bold">Python</p>
-            </div>
-            <div class="p-3 text-center pop-in none pop-in none">
-              <img
-                src="./resources/icons/css&html.png"
-                alt="angular"
-                style="height: 4em;"
-              />
-              <p class="font-weight-bold">Html&Css</p>
-            </div>
-            <div class="p-3 text-center pop-in none">
-              <img src="./resources/icons/ts.png" alt="angular" class="tec" />
-              <p class="font-weight-bold">TypeScript</p>
-            </div>
-            <div class="p-3 text-center pop-in none">
-              <img src="./resources/icons/git.png" alt="angular" class="tec" />
-              <p class="font-weight-bold">Git</p>
-            </div>
-            <div class="p-3 text-center pop-in none">
-              <img
-                src="./resources/icons/mongodb.png"
-                alt="angular"
-                class="tec"
-              />
-              <p class="font-weight-bold">MongoDB</p>
-            </div>
-            <div class="p-3 text-center pop-in none">
-              <img
-                src="./resources/icons/mysql.png"
-                alt="angular"
-                class="tec"
-              />
-              <p class="font-weight-bold">MySQL</p>
-            </div>
-            <div class="p-3 text-center pop-in none">
-              <img
-                src="./resources/icons/unity.png"
-                alt="angular"
-                class="tec"
-              />
-              <p class="font-weight-bold">Unity3D</p>
-            </div>
-            <div class="p-3 text-center pop-in none">
-              <img src="./resources/icons/ps.png" alt="angular" class="tec" />
-              <p class="font-weight-bold">PhotoShop</p>
-            </div>
-            <div class="p-3 text-center pop-in none">
-              <img
-                src="./resources/icons/blender.png"
-                alt="angular"
-                class="tec"
-              />
-              <p class="font-weight-bold">Blender3D</p>
+          <div class="bg-light p-5 rounded shadow-lg mb-3">
+            <div class="subheading mb-3">Programming Languages & Tools</div>
+            <div class="d-flex flex-wrap">
+              <div class="p-3 text-center pop-in none">
+                <img
+                  src="./resources/icons/angular.png"
+                  alt="angular"
+                  class="tec"
+                />
+                <p class="font-weight-bold">Angular</p>
+              </div>
+              <div class="p-3 text-center pop-in none">
+                <img
+                  src="./resources/icons/bootstrap.png"
+                  alt="angular"
+                  class="tec"
+                />
+                <p class="font-weight-bold">Bootstrap</p>
+              </div>
+              <div class="p-3 text-center pop-in none">
+                <img src="./resources/icons/js.png" alt="angular" class="tec" />
+                <p class="font-weight-bold">JavaScript</p>
+              </div>
+              <div class="p-3 text-center pop-in none">
+                <img
+                  src="./resources/icons/nodejs.png"
+                  alt="angular"
+                  class="tec"
+                />
+                <p class="font-weight-bold">Nodejs</p>
+              </div>
+              <div class="p-3 text-center pop-in none">
+                <img
+                  src="./resources/icons/python.png"
+                  alt="angular"
+                  class="tec"
+                />
+                <p class="font-weight-bold">Python</p>
+              </div>
+              <div class="p-3 text-center pop-in none pop-in none">
+                <img
+                  src="./resources/icons/css&html.png"
+                  alt="angular"
+                  style="height: 4em;"
+                />
+                <p class="font-weight-bold">Html&Css</p>
+              </div>
+              <div class="p-3 text-center pop-in none">
+                <img src="./resources/icons/ts.png" alt="angular" class="tec" />
+                <p class="font-weight-bold">TypeScript</p>
+              </div>
+              <div class="p-3 text-center pop-in none">
+                <img
+                  src="./resources/icons/git.png"
+                  alt="angular"
+                  class="tec"
+                />
+                <p class="font-weight-bold">Git</p>
+              </div>
+              <div class="p-3 text-center pop-in none">
+                <img
+                  src="./resources/icons/mongodb.png"
+                  alt="angular"
+                  class="tec"
+                />
+                <p class="font-weight-bold">MongoDB</p>
+              </div>
+              <div class="p-3 text-center pop-in none">
+                <img
+                  src="./resources/icons/mysql.png"
+                  alt="angular"
+                  class="tec"
+                />
+                <p class="font-weight-bold">MySQL</p>
+              </div>
+              <div class="p-3 text-center pop-in none">
+                <img
+                  src="./resources/icons/unity.png"
+                  alt="angular"
+                  class="tec"
+                />
+                <p class="font-weight-bold">Unity3D</p>
+              </div>
+              <div class="p-3 text-center pop-in none">
+                <img src="./resources/icons/ps.png" alt="angular" class="tec" />
+                <p class="font-weight-bold">PhotoShop</p>
+              </div>
+              <div class="p-3 text-center pop-in none">
+                <img
+                  src="./resources/icons/blender.png"
+                  alt="angular"
+                  class="tec"
+                />
+                <p class="font-weight-bold">Blender3D</p>
+              </div>
             </div>
           </div>
-          <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li class="fade-in none">
-              <span class="fa-li"><i class="fas fa-check"></i></span>
-              Responsive Design
-            </li>
-            <li class="fade-in none">
-              <span class="fa-li"><i class="fas fa-check"></i></span>
-              Cross Browser Testing & Debugging
-            </li>
-            <li class="fade-in none">
-              <span class="fa-li"><i class="fas fa-check"></i></span>
-              API testing
-            </li>
-          </ul>
+          <div class="bg-light p-5 rounded shadow-lg">
+            <div class="subheading mb-3">Workflow</div>
+            <ul class="fa-ul mb-0">
+              <li class="fade-in none">
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Responsive Design
+              </li>
+              <li class="fade-in none">
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Cross Browser Testing & Debugging
+              </li>
+              <li class="fade-in none">
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                API testing
+              </li>
+            </ul>
+          </div>
         </div>
       </section></template
     >
     <!-- Interests--><template>
       <section class="resume-section" id="interests">
-        <div class="resume-section-content fade-in none">
-          <h2 class="mb-5">Interests</h2>
+        <div
+          class="resume-section-content fade-in none bg-light p-5 rounded shadow-lg"
+        >
+          <h2 class="mb-5">Interests😎</h2>
           <p class="h5">
-            Apart from being a web developer, I enjoy playing Guitar. I also
-            like to play football. When indoors i enjoy playing chess ,
-            videogams and reading books.
+            Apart from being a web developer 👨‍💻, I enjoy playing Guitar 🎸. I
+            also like to play football ⚽. When indoors i enjoy playing chess ♟️
+            , videogams🎮 and reading books 📚.
           </p>
         </div>
       </section></template
@@ -379,9 +396,9 @@
     <!-- Awards--><template>
       <section class="resume-section" id="awards">
         <div class="resume-section-content">
-          <h2 class="mb-5 fade-in none">Awards & Certifications</h2>
+          <h2 class="mb-5">Awards & Certifications</h2>
           <ul class="fa-ul mb-0">
-            <li class="fae-in none h5 p-3 second-bg m-2">
+            <li class="fade-in none h5 p-3 second-bg m-2 rounded shadow-lg">
               <span class="fa-li"
                 ><i class="fas fa-trophy text-warning"></i
               ></span>
@@ -389,7 +406,7 @@
               <sup>nd</sup>
               Place - GUVI - Hackathon May 18, 2020(FreshDesk API and frontend)
             </li>
-            <li class="fae-in none h5 p-3 third-bg m-2">
+            <li class="fade-in none h5 p-3 third-bg m-2 rounded shadow-lg">
               <span class="fa-li"
                 ><i class="fas fa-trophy text-warning"></i
               ></span>
@@ -434,6 +451,16 @@
                       />
                       <img
                         src="./resources/icons/ps.png"
+                        alt="angular"
+                        class="tec-small"
+                      />
+                      <img
+                        src="./resources/icons/csharp.png"
+                        alt="angular"
+                        class="tec-small"
+                      />
+                      <img
+                        src="./resources/icons/android.png"
                         alt="angular"
                         class="tec-small"
                       />
@@ -579,7 +606,8 @@
                   <div class="card-body">
                     <h5 class="card-title">Video Confrence app</h5>
                     <p class="card-text">
-                      A video confrencing app using socket io and Web RTC
+                      A video confrencing and chat app using socket io and Web
+                      RTC
                     </p>
                     <h5>Tech stack :</h5>
                     <div style="display: flex; padding-bottom: 3px;">
