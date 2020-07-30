@@ -18,6 +18,7 @@ $(function () {
       let clon = temp[id].content.cloneNode(true);
       displayWindow.html("");
       displayWindow.append(clon);
+      if (current == temp.length - 1) socialIconListners();
     });
   });
 });
@@ -33,6 +34,40 @@ function showFE() {
   $(".fs,.ot").hide();
   $(".fe").show();
 }
+function showOT() {
+  $(".fs,.fe").hide();
+  $(".ot").show();
+}
 function clickProjBtn() {
   $("#proj-btn").click();
+}
+
+function socialIconListners() {
+  //social icons
+  $("#fb-profile").on("click", function (event) {
+    event.preventDefault();
+    window.open("https://www.facebook.com/johnfrancispullikotil", "facebook");
+  });
+  $("#ig-profile").on("click", function (event) {
+    event.preventDefault();
+    window.open("https://www.instagram.com/munchkin_.man/", "instagram");
+  });
+  $("#github-profile").on("click", function (event) {
+    event.preventDefault();
+    window.open("https://github.com/cpt-John", "github");
+  });
+  $("#linkedin-profile").on("click", function (event) {
+    event.preventDefault();
+    window.open(
+      "https://www.linkedin.com/in/john-francis-526999148/",
+      "linkedin"
+    );
+  });
+  $("#gmail-send").on("click", function (event) {
+    event.preventDefault();
+    window.open(
+      "https://mail.google.com/mail/u/0/?view=cm&fs=1&to=johnfrancis95815@gmail.com&tf=1",
+      "gmail"
+    );
+  });
 }
