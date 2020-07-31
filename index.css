@@ -194,6 +194,7 @@ h3 {
 }
 .awards > li {
   margin-bottom: 1em !important;
+  text-align: center;
 }
 
 .social-icons .social-icon {
@@ -230,4 +231,10 @@ h3 {
 }
 .social-icon:hover {
   transform: translateY(-10px);
+}
+
+/* button mr */
+.btn.dark-bg {
+  margin-left: 5px;
+  margin-right: 5px;
 }
