@@ -213,3 +213,20 @@ h3 {
 .social-icons .social-icon:hover {
   background-color: #5956e2;
 }
+
+/* blur focus proj*/
+
+.proj {
+  transition: all 0.2s ease-in-out;
+}
+.proj:hover {
+  z-index: 5;
+  transform: scale(1.1);
+}
+
+.social-icon {
+  transition: all 0.2s ease-in-out;
+}
+.social-icon:hover {
+  transform: translateY(-10px);
+}
