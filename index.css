@@ -101,14 +101,14 @@ body {
 
 @keyframes slide-in {
   0% {
-    transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
   }
   50% {
-    transform: translateX(25%);
-    -moz-transform: translateX(25%);
-    -webkit-transform: translateX(25%);
+    transform: translateX(5%);
+    -moz-transform: translateX(5%);
+    -webkit-transform: translateX(5%);
   }
   100% {
     transform: translateX(0);
@@ -118,7 +118,7 @@ body {
 }
 
 .slide-in {
-  animation: 1s ease-out 0s 1 slide-in;
+  animation: 0.8s ease-out 0s 1 slide-in;
 }
 
 .orange-bg {
@@ -166,7 +166,8 @@ body {
 .profile-pic {
   width: 15em;
 }
-.profile-pic img {
+
+.profile-pic > img {
   width: inherit;
   height: inherit;
   padding: 10px;
