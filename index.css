@@ -4,6 +4,17 @@ body {
   overflow-x: hidden;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 @media (min-width: 768px) {
   .title-name {
     visibility: hidden;
@@ -41,9 +52,16 @@ body {
 
 @keyframes slide-bubble {
   0% {
+    opacity: 0;
     transform: translateY(200%);
     -moz-transform: translateY(200%);
     -webkit-transform: translateY(200%);
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
   100% {
     transform: translateY(0%);
@@ -57,6 +75,8 @@ body {
   -moz-border-radius: 50%;
   border-radius: 50%;
   position: fixed;
+}
+.bubble-animate {
   animation: slide-bubble 3s ease-in-out 1 alternate;
   -webkit-animation: slide-bubble 3s ease-in-out 1 alternate;
   -moz-animation: slide-bubble 3s ease-in-out 1 alternate;

@@ -5,6 +5,12 @@ $(function () {
   let displayWindow = $("#main-window");
   displayWindow.append(temp[0].content.cloneNode(true));
 
+  $(".bubble").on(
+    "animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd",
+    function () {
+      $(".bubble").removeClass("bubble-animate");
+    }
+  );
   //   initialized
 
   $(".nav-item").on("click", function () {
@@ -12,6 +18,15 @@ $(function () {
     $(this).addClass("nav-item-selected");
     let id = $(".nav-item").index(this);
     if (current === id) return;
+
+    $(".bubble").addClass("bubble-animate");
+
+    $(".bubble").on(
+      "animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd",
+      function () {
+        $(".bubble").removeClass("bubble-animate");
+      }
+    );
 
     $("#main-window .row").fadeOut("slow", function () {
       current = id;
