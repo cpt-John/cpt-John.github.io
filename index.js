@@ -42,16 +42,20 @@ function showAllProj() {
   $(".proj").show();
 }
 function showFS() {
-  $(".fe,.ot").hide();
+  $(".proj").hide();
   $(".fs").show();
 }
 function showFE() {
-  $(".fs,.ot").hide();
+  $(".proj").hide();
   $(".fe").show();
 }
 function showOT() {
-  $(".fs,.fe").hide();
+  $(".proj").hide();
   $(".ot").show();
+}
+function showAnd() {
+  $(".proj").hide();
+  $(".and").show();
 }
 function clickProjBtn() {
   $("#proj-btn").click();

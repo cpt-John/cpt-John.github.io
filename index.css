@@ -196,21 +196,21 @@ h3 {
   border-radius: 5px;
   background-color: #f1e97c;
   border: 3px solid #b4b652;
-  font-style: italic;
+
   font-weight: 400;
 }
 .second-bg {
   border-radius: 5px;
   background-color: #e0e0e0;
   border: 3px solid #a3a3a3;
-  font-style: italic;
+
   font-weight: 400;
 }
 .third-bg {
   border-radius: 5px;
   background-color: #f1bd7c;
   border: 3px solid #b68952;
-  font-style: italic;
+
   font-weight: 400;
 }
 .awards > li {
@@ -258,4 +258,7 @@ h3 {
 .btn.dark-bg {
   margin-left: 5px;
   margin-right: 5px;
+}
+h2 {
+  font-weight: 600;
 }
