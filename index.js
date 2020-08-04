@@ -28,13 +28,19 @@ $(function () {
       }
     );
 
-    $("#main-window .row").fadeOut("slow", function () {
-      current = id;
-      let clon = temp[id].content.cloneNode(true);
-      displayWindow.html("");
-      displayWindow.append(clon);
-      if (current == temp.length - 1) socialIconListners();
-    });
+    $("#main-window .row").fadeOut("slow");
+    $("#main-window .row")
+      .promise()
+      .done(function () {
+        current = id;
+        let clon = temp[id].content.cloneNode(true);
+        displayWindow.html("");
+        displayWindow.append(clon);
+
+        $("html").scrollTop(0);
+
+        if (current == temp.length - 1) socialIconListners();
+      });
   });
 });
 
