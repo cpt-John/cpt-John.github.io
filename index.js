@@ -1,6 +1,7 @@
 let current = 0;
-
+let comments = null;
 $(function () {
+  populateComments();
   let temp = $("template");
   let displayWindow = $("#main-window");
   displayWindow.append(temp[0].content.cloneNode(true));
@@ -12,7 +13,6 @@ $(function () {
     }
   );
 
-  populateComments();
   //   initialized
 
   $(".nav-item").on("click", function () {
@@ -42,6 +42,7 @@ $(function () {
         $("html").scrollTop(0);
 
         if (current == temp.length - 1) socialIconListners();
+        if (current == 0) populateComments();
       });
   });
 });
@@ -102,30 +103,33 @@ function socialIconListners() {
 let appUrl = "https://john-node-backend.herokuapp.com/";
 
 function populateComments() {
-  function populate(name, comment, active) {
-    let commentBlock = `<div class="carousel-item text-center ${
-      active ? "active" : ""
-    }">
-                <h3>${name} says,</h3>
+  if (comments) {
+    populate(comments);
+    return;
+  }
+  function populate(comments) {
+    comments.forEach(function (c, i) {
+      let commentBlock = `<div class="carousel-item text-center ${
+        i == 0 ? "active" : ""
+      }">
+                <h3>${c.name} says,</h3>
                 <p>
-                  ${comment}
+                  ${c.comment}
                 </p>
               </div>`;
-    $("#comments").append(commentBlock);
+      $("#comments").append(commentBlock);
+    });
+    $("#comments-carousel").addClass("slide");
+    $(".carousel").carousel({
+      interval: 2000,
+    });
   }
 
   let xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function () {
     if (this.status == 200 && this.readyState == 4) {
-      let result = JSON.parse(xhr.responseText)["result"];
-      result.forEach(function (c, i) {
-        let active = i == 0 ? true : false;
-        populate(c.name, c.comment, active);
-      });
-      $("#comments-carousel").addClass("slide");
-      $(".carousel").carousel({
-        interval: 2000,
-      });
+      comments = JSON.parse(xhr.responseText)["result"];
+      populate(comments);
     }
   };
   xhr.open("GET", appUrl + "getComments", true);
@@ -143,6 +147,7 @@ function addComment() {
     if (this.status == 200 && this.readyState == 4) {
       $("#comments").html("");
       $("#comments-carousel").removeClass("slide");
+      comments = null;
       populateComments();
     }
   };
