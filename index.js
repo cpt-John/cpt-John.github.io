@@ -11,6 +11,8 @@ $(function () {
       $(".bubble").removeClass("bubble-animate");
     }
   );
+
+  populateComments();
   //   initialized
 
   $(".nav-item").on("click", function () {
@@ -95,4 +97,57 @@ function socialIconListners() {
       "gmail"
     );
   });
+}
+
+let appUrl = "https://john-node-backend.herokuapp.com/";
+
+function populateComments() {
+  function populate(name, comment, active) {
+    let commentBlock = `<div class="carousel-item text-center ${
+      active ? "active" : ""
+    }">
+                <h3>${name} says,</h3>
+                <p>
+                  ${comment}
+                </p>
+              </div>`;
+    $("#comments").append(commentBlock);
+  }
+
+  let xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function () {
+    if (this.status == 200 && this.readyState == 4) {
+      let result = JSON.parse(xhr.responseText)["result"];
+      result.forEach(function (c, i) {
+        let active = i == 0 ? true : false;
+        populate(c.name, c.comment, active);
+      });
+      $("#comments-carousel").addClass("slide");
+      $(".carousel").carousel({
+        interval: 2000,
+      });
+    }
+  };
+  xhr.open("GET", appUrl + "getComments", true);
+  xhr.send();
+}
+
+function addComment() {
+  let name = $("#comment-name").val();
+  let comment = $("#comment-content").val();
+  if (!name || !comment) return;
+  $("#comment-name").val("");
+  $("#comment-content").val("");
+  let xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function () {
+    if (this.status == 200 && this.readyState == 4) {
+      $("#comments").html("");
+      $("#comments-carousel").removeClass("slide");
+      populateComments();
+    }
+  };
+  xhr.open("POST", appUrl + "setComment", true);
+  let body = { name, comment };
+  xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+  xhr.send(JSON.stringify(body));
 }

@@ -262,3 +262,9 @@ h3 {
 h2 {
   font-weight: 600;
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 3% !important;
+  margin: 0.5em;
+}
