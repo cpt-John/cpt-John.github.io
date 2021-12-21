@@ -107,14 +107,8 @@ function populateComments() {
     populate(comments);
     return;
   }
- let commentBlock = `<div class="carousel-item text-center active">
-                <p>
-                 Loading...
-                </p>
-              </div>`;
-  $("#comments").append(commentBlock);
   function populate(comments) {
-    $( "#comments" ).empty();
+    $("#comments").empty();
     comments.forEach(function (c, i) {
       let commentBlock = `<div class="carousel-item text-center ${
         i == 0 ? "active" : ""

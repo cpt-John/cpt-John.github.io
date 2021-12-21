@@ -24,35 +24,36 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </head>
   <link rel="stylesheet" href="./index.css" />
+
   <body>
     <div class="background">
       <div
         class="bubble bubble-animate blue-bg"
-        style="right: -70vh; width: 100vh; height: 100vh;"
+        style="right: -70vh; width: 100vh; height: 100vh"
       ></div>
       <div
         class="bubble bubble-animate orange-bg"
-        style="left: 10vh; width: 20vh; height: 20vh;"
+        style="left: 10vh; width: 20vh; height: 20vh"
       ></div>
       <div
         class="bubble bubble-animate pink-bg"
-        style="left: 20vh; bottom: 30vh; width: 10vh; height: 10vh;"
+        style="left: 20vh; bottom: 30vh; width: 10vh; height: 10vh"
       ></div>
       <div
         class="bubble bubble-animate light-bg"
-        style="left: 25vh; bottom: 20vh; width: 5vh; height: 5vh;"
+        style="left: 25vh; bottom: 20vh; width: 5vh; height: 5vh"
       ></div>
       <div
         class="bubble bubble-animate light-bg"
-        style="left: 15vh; bottom: 5vh; width: 5vh; height: 5vh;"
+        style="left: 15vh; bottom: 5vh; width: 5vh; height: 5vh"
       ></div>
       <div
         class="bubble bubble-animate light-bg"
-        style="left: 105vh; bottom: 20vh; width: 25vh; height: 25vh;"
+        style="left: 105vh; bottom: 20vh; width: 25vh; height: 25vh"
       ></div>
       <div
         class="bubble bubble-animate pink-bg"
-        style="left: 55vh; bottom: -10vh; width: 25vh; height: 25vh;"
+        style="left: 55vh; bottom: -10vh; width: 25vh; height: 25vh"
       ></div>
     </div>
     <nav
@@ -140,7 +141,7 @@
       <div class="row px-5 pb-5 mb-3">
         <div class="col-md-6 dark-cl slide-in">
           <h1>
-            Hi, I am <span style="font-weight: bolder;"> John Francis</span>
+            Hi, I am <span style="font-weight: bolder"> John Francis</span>
           </h1>
           <h3
             style="
@@ -152,7 +153,7 @@
             About
           </h3>
           <p
-            style="font-style: italic; line-height: 2em; font-size: large;"
+            style="font-style: italic; line-height: 2em; font-size: large"
             class="dark-cl pt-3"
           >
             <mark class="light-bg">
@@ -175,18 +176,18 @@
             class="btn purple-grad-bg light-cl pop-in"
             type="button"
             onclick="clickProjBtn()"
-            style="font-size: 1.5em;"
+            style="font-size: 1.5em"
           >
             Projects
           </button>
           <a
             href="./resources/resume/resume.pdf"
             download="resume2020.pdf"
-            style="margin-left: 3em;"
+            style="margin-left: 3em"
             ><button
               type="button"
               class="btn purple-grad-bg light-cl pop-in"
-              style="font-size: 1.5em;"
+              style="font-size: 1.5em"
             >
               <i class="fas fa-download"></i>Resume
             </button></a
@@ -202,7 +203,7 @@
             class="btn bg-primary badge-pill light-cl pop-in p-2"
             data-toggle="modal"
             data-target="#comment-modal"
-            style="font-size: 1.1em;"
+            style="font-size: 1.1em"
           >
             <i class="fas fa-plus"></i> Leave a comment
           </button>
@@ -218,9 +219,7 @@
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="comment-modalLabel">
-                    Comment
-                  </h5>
+                  <h5 class="modal-title" id="comment-modalLabel">Comment</h5>
                   <button
                     type="button"
                     class="close"
@@ -248,7 +247,7 @@
                         name=""
                         rows="5"
                         id="comment-content"
-                        style="resize: none;"
+                        style="resize: none"
                         maxlength="300"
                       ></textarea>
                     </div>
@@ -290,7 +289,11 @@
             <span class="sr-only">Next</span>
           </a>
           <div id="comments-carousel" class="carousel" data-ride="carousel">
-            <div class="carousel-inner px-3" id="comments"></div>
+            <div class="carousel-inner px-3" id="comments">
+              <div class="carousel-item text-center active">
+                <h3>Loading...</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -338,7 +341,7 @@
       </div>
       <div class="row p-md-5">
         <div class="col-md-6 mb-3 pop-in proj ot and">
-          <div class="card p-3 light-bg shadow-lg" style="height: 100%;">
+          <div class="card p-3 light-bg shadow-lg" style="height: 100%">
             <img
               class="card-img-top"
               src="./resources/imgs/space_surf.PNG"
@@ -350,7 +353,7 @@
                 A Casual Android Game developed in Unity3D and C#
               </p>
               <h4>Tech stack :</h4>
-              <div style="display: flex; padding-bottom: 7px; flex-wrap: wrap;">
+              <div style="display: flex; padding-bottom: 7px; flex-wrap: wrap">
                 <img
                   src="./resources/icons/unity.png"
                   alt="angular"
@@ -388,7 +391,7 @@
         </div>
 
         <div class="col-md-6 mb-3 pop-in proj fs">
-          <div class="card p-3 light-bg shadow-lg" style="height: 100%;">
+          <div class="card p-3 light-bg shadow-lg" style="height: 100%">
             <img
               class="card-img-top"
               src="./resources/imgs/search_engine.PNG"
@@ -400,7 +403,7 @@
                 A simple search engine using mongodb , node.js and angular
               </p>
               <h4>Tech stack :</h4>
-              <div style="display: flex; padding-bottom: 7px;">
+              <div style="display: flex; padding-bottom: 7px">
                 <img
                   src="./resources/icons/angular.png"
                   alt="angular"
@@ -428,6 +431,7 @@
                 target="_blank"
                 >View Project</a
               >
+
               <div class="d-flex justify-content-around mt-1">
                 <a
                   href="https://github.com/cpt-John/searchEngine-frontEnd"
@@ -446,7 +450,7 @@
           </div>
         </div>
         <div class="col-md-6 mb-3 pop-in proj fs">
-          <div class="card p-3 light-bg shadow-lg" style="height: 100%;">
+          <div class="card p-3 light-bg shadow-lg" style="height: 100%">
             <img
               class="card-img-top"
               src="./resources/imgs/videocall.png"
@@ -458,7 +462,7 @@
                 A video conferencing and chat app using socket io and Web RTC
               </p>
               <h4>Tech stack :</h4>
-              <div style="display: flex; padding-bottom: 7px;">
+              <div style="display: flex; padding-bottom: 7px">
                 <img
                   src="./resources/icons/js.png"
                   alt="angular"
@@ -493,7 +497,7 @@
           </div>
         </div>
         <div class="col-md-6 mb-3 pop-in proj fs">
-          <div class="card p-3 light-bg shadow-lg" style="height: 100%;">
+          <div class="card p-3 light-bg shadow-lg" style="height: 100%">
             <img
               class="card-img-top"
               src="./resources/imgs/url_shortner.PNG"
@@ -505,7 +509,7 @@
                 A url shortner app with register,login-logout features
               </p>
               <h4>Tech stack :</h4>
-              <div style="display: flex; padding-bottom: 7px;">
+              <div style="display: flex; padding-bottom: 7px">
                 <img
                   src="./resources/icons/angular.png"
                   alt="angular"
@@ -551,7 +555,7 @@
           </div>
         </div>
         <div class="col-md-6 mb-3 pop-in proj fe">
-          <div class="card p-3 light-bg shadow-lg" style="height: 100%;">
+          <div class="card p-3 light-bg shadow-lg" style="height: 100%">
             <img
               class="card-img-top"
               src="./resources/imgs/covid.PNG"
@@ -563,7 +567,7 @@
                 A covid19 visualizer for India using interactive charts
               </p>
               <h4>Tech stack :</h4>
-              <div style="display: flex; padding-bottom: 7px;">
+              <div style="display: flex; padding-bottom: 7px">
                 <img
                   src="./resources/icons/angular.png"
                   alt="angular"
@@ -593,7 +597,7 @@
           </div>
         </div>
         <div class="col-md-6 mb-3 pop-in proj fs">
-          <div class="card p-3 light-bg shadow-lg" style="height: 100%;">
+          <div class="card p-3 light-bg shadow-lg" style="height: 100%">
             <img
               class="card-img-top"
               src="./resources/imgs/crm.png"
@@ -606,7 +610,7 @@
                 contacts and leads with role access
               </p>
               <h4>Tech stack :</h4>
-              <div style="display: flex; padding-bottom: 7px;">
+              <div style="display: flex; padding-bottom: 7px">
                 <img
                   src="./resources/icons/angular.png"
                   alt="angular"
@@ -652,7 +656,7 @@
           </div>
         </div>
         <div class="col-md-6 mb-3 pop-in proj fe">
-          <div class="card p-3 light-bg shadow-lg" style="height: 100%;">
+          <div class="card p-3 light-bg shadow-lg" style="height: 100%">
             <img
               class="card-img-top"
               src="./resources/imgs/freshdesk.PNG"
@@ -664,7 +668,7 @@
                 A FreshDesk App using Freshdesk Api using http methods
               </p>
               <h4>Tech stack :</h4>
-              <div style="display: flex; padding-bottom: 7px;">
+              <div style="display: flex; padding-bottom: 7px">
                 <img
                   src="./resources/icons/js.png"
                   alt="angular"
@@ -694,7 +698,7 @@
           </div>
         </div>
         <div class="col-md-6 mb-3 pop-in proj fs">
-          <div class="card p-3 light-bg shadow-lg" style="height: 100%;">
+          <div class="card p-3 light-bg shadow-lg" style="height: 100%">
             <img
               class="card-img-top"
               src="./resources/imgs/clubsapp.png"
@@ -706,7 +710,7 @@
                 A simple Club data management using mysql and flask
               </p>
               <h4>Tech stack :</h4>
-              <div style="display: flex; padding-bottom: 7px;">
+              <div style="display: flex; padding-bottom: 7px">
                 <img
                   src="./resources/icons/js.png"
                   alt="angular"
@@ -756,7 +760,7 @@
           </div>
         </div>
         <div class="col-md-6 mb-3 pop-in proj fe">
-          <div class="card p-3 light-bg shadow-lg" style="height: 100%;">
+          <div class="card p-3 light-bg shadow-lg" style="height: 100%">
             <img
               class="card-img-top"
               src="./resources/imgs/nyt.PNG"
@@ -764,11 +768,9 @@
             />
             <div class="card-body d-flex flex-column pb-0">
               <h4 class="card-title">NewYorkTimes Api</h4>
-              <p class="card-text">
-                A NYT top stories App using nyt Api
-              </p>
+              <p class="card-text">A NYT top stories App using nyt Api</p>
               <h4>Tech stack :</h4>
-              <div style="display: flex; padding-bottom: 7px;">
+              <div style="display: flex; padding-bottom: 7px">
                 <img
                   src="./resources/icons/js.png"
                   alt="angular"
@@ -798,7 +800,7 @@
           </div>
         </div>
         <div class="col-md-6 mb-3 pop-in proj fe">
-          <div class="card p-3 light-bg shadow-lg" style="height: 100%;">
+          <div class="card p-3 light-bg shadow-lg" style="height: 100%">
             <img
               class="card-img-top"
               src="./resources/imgs/countries.png"
@@ -810,7 +812,7 @@
                 A REST countries implementation with Open weather api
               </p>
               <h4>Tech stack :</h4>
-              <div style="display: flex; padding-bottom: 7px;">
+              <div style="display: flex; padding-bottom: 7px">
                 <img
                   src="./resources/icons/js.png"
                   alt="angular"
@@ -845,7 +847,7 @@
           </div>
         </div>
         <div class="col-md-6 mb-3 pop-in proj ot">
-          <div class="card p-3 light-bg shadow-lg" style="height: 100%;">
+          <div class="card p-3 light-bg shadow-lg" style="height: 100%">
             <img
               class="card-img-top"
               src="./resources/imgs/npm.png"
@@ -858,7 +860,7 @@
                 npm repository
               </p>
               <h4>Tech stack :</h4>
-              <div style="display: flex; padding-bottom: 7px;">
+              <div style="display: flex; padding-bottom: 7px">
                 <img
                   src="./resources/icons/js.png"
                   alt="angular"
@@ -883,7 +885,7 @@
           </div>
         </div>
         <div class="col-md-6 mb-3 pop-in proj ot and">
-          <div class="card p-3 light-bg shadow-lg" style="height: 100%;">
+          <div class="card p-3 light-bg shadow-lg" style="height: 100%">
             <img
               class="card-img-top"
               src="./resources/imgs/Native_toDo.png"
@@ -895,7 +897,7 @@
                 A simple react native app using Async Storage.
               </p>
               <h4>Tech stack :</h4>
-              <div style="display: flex; padding-bottom: 7px;">
+              <div style="display: flex; padding-bottom: 7px">
                 <img
                   src="./resources/icons/react.png"
                   alt="angular"
@@ -920,7 +922,7 @@
           </div>
         </div>
         <div class="col-md-6 mb-3 pop-in proj ot">
-          <div class="card p-3 light-bg shadow-lg" style="height: 100%;">
+          <div class="card p-3 light-bg shadow-lg" style="height: 100%">
             <img
               class="card-img-top"
               src="./resources/imgs/reactJStoDo.png"
@@ -933,7 +935,7 @@
                 and loads from local storage
               </p>
               <h4>Tech stack :</h4>
-              <div style="display: flex; padding-bottom: 7px;">
+              <div style="display: flex; padding-bottom: 7px">
                 <img
                   src="./resources/icons/react.png"
                   alt="angular"
@@ -973,7 +975,7 @@
           </div>
         </div>
         <div class="col-md-6 mb-3 pop-in proj ot">
-          <div class="card p-3 light-bg shadow-lg" style="height: 100%;">
+          <div class="card p-3 light-bg shadow-lg" style="height: 100%">
             <img
               class="card-img-top"
               src="./resources/imgs/tic-tac.png"
@@ -981,11 +983,9 @@
             />
             <div class="card-body d-flex flex-column pb-0">
               <h4 class="card-title">Tic-Tac-Toe</h4>
-              <p class="card-text">
-                A simple Tic-Tac-Toe game
-              </p>
+              <p class="card-text">A simple Tic-Tac-Toe game</p>
               <h4>Tech stack :</h4>
-              <div style="display: flex; padding-bottom: 7px;">
+              <div style="display: flex; padding-bottom: 7px">
                 <img
                   src="./resources/icons/html.png"
                   alt="angular"
@@ -1020,7 +1020,7 @@
           </div>
         </div>
         <div class="col-md-6 mb-3 pop-in proj ot">
-          <div class="card p-3 light-bg shadow-lg" style="height: 100%;">
+          <div class="card p-3 light-bg shadow-lg" style="height: 100%">
             <img
               class="card-img-top"
               src="./resources/imgs/cricket.png"
@@ -1028,11 +1028,9 @@
             />
             <div class="card-body d-flex flex-column pb-0">
               <h4 class="card-title">Click-Cricket</h4>
-              <p class="card-text">
-                A Fun two Player Cricket Game
-              </p>
+              <p class="card-text">A Fun two Player Cricket Game</p>
               <h4>Tech stack :</h4>
-              <div style="display: flex; padding-bottom: 7px;">
+              <div style="display: flex; padding-bottom: 7px">
                 <img
                   src="./resources/icons/html.png"
                   alt="angular"
@@ -1196,39 +1194,68 @@
       <div class="row slide-in">
         <div class="col">
           <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5 bg-light p-5 rounded shadow"
+            class="
+              d-flex
+              flex-column flex-md-row
+              justify-content-between
+              mb-5
+              bg-light
+              p-5
+              rounded
+              shadow
+            "
           >
             <div class="flex-grow-1">
-              <h1 class="mb-0 dark-cl" style="font-weight: bold;">
+              <h1 class="mb-0 dark-cl" style="font-weight: bold">
                 Software Engineer
               </h1>
               <h3 class="mb-3 dark-cl">LiftoffLLC , Banglore.</h3>
               <p class="dark-cl">
                 Worked in the core developement team of the following projects
-                <ul>
-                  <li>
-                    <span><a href="https://www.okayhumans.com/" target="_blank">OkayHumans.com</a> - A mental healthcare business</span>
-                    <p>
-                      Worked in frontend web, backend development and deployment team. 
-                    </p>
-                  </li>
-                  <li>
-                    <span><a href="https://www.kicksnation.com/" target="_blank">KicksNation.com</a> - A personalised sneaker styling business</span>
-                    <p>
-                      Worked in development of new apis and features in the backend team. 
-                    </p>
-                  </li>
-                  <li>
-                    <span><a href="https://www.thinkingnation.org/" target="_blank">ThinkingNation.org</a> - A US based Ed-Tech business</span>
-                    <p>
-                      Managed the development of new apis and features in the backend team. 
-                    </p>
-                  </li>
-                </ul>
               </p>
+              <ul>
+                <li>
+                  <span
+                    ><a href="https://www.okayhumans.com/" target="_blank"
+                      >OkayHumans.com</a
+                    >
+                    - A mental healthcare business</span
+                  >
+                  <p>
+                    Worked in frontend web, backend development and deployment
+                    team.
+                  </p>
+                </li>
+                <li>
+                  <span
+                    ><a href="https://www.kicksnation.com/" target="_blank"
+                      >KicksNation.com</a
+                    >
+                    - A personalised sneaker styling business</span
+                  >
+                  <p>
+                    Worked in development of new apis and features in the
+                    backend team.
+                  </p>
+                </li>
+                <li>
+                  <span
+                    ><a href="https://www.thinkingnation.org/" target="_blank"
+                      >ThinkingNation.org</a
+                    >
+                    - A US based Ed-Tech business</span
+                  >
+                  <p>
+                    Managed the development of new apis and features in the
+                    backend team.
+                  </p>
+                </li>
+              </ul>
             </div>
             <div class="flex-shrink-0">
-              <h3 class="text-primary blue-cl">September,2020 - September,2021</h3>
+              <h3 class="text-primary blue-cl">
+                September,2020 - September,2021
+              </h3>
             </div>
           </div>
         </div>
@@ -1236,10 +1263,19 @@
       <div class="row slide-in">
         <div class="col">
           <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5 bg-light p-5 rounded shadow"
+            class="
+              d-flex
+              flex-column flex-md-row
+              justify-content-between
+              mb-5
+              bg-light
+              p-5
+              rounded
+              shadow
+            "
           >
             <div class="flex-grow-1">
-              <h1 class="mb-0 dark-cl" style="font-weight: bold;">
+              <h1 class="mb-0 dark-cl" style="font-weight: bold">
                 Web Developement Intern
               </h1>
               <h3 class="mb-3 dark-cl">GUVI , Chennai.</h3>
@@ -1257,13 +1293,22 @@
       <div class="row slide-in">
         <div class="col">
           <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5 bg-light p-5 rounded shadow"
+            class="
+              d-flex
+              flex-column flex-md-row
+              justify-content-between
+              mb-5
+              bg-light
+              p-5
+              rounded
+              shadow
+            "
           >
             <div class="flex-grow-1">
-              <h1 class="mb-0 dark-cl" style="font-weight: bold;">
+              <h1 class="mb-0 dark-cl" style="font-weight: bold">
                 Quality Control Inspector
               </h1>
-              <h3 class="mb-3 dark-cl" style="word-wrap: break-word;">
+              <h3 class="mb-3 dark-cl" style="word-wrap: break-word">
                 Aquasub Engineering(TEXMO/AQUATEX)
               </h3>
               <p class="dark-cl">
@@ -1283,7 +1328,16 @@
       <div class="row slide-in">
         <div class="col">
           <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5 bg-light p-5 rounded shadow-lg"
+            class="
+              d-flex
+              flex-column flex-md-row
+              justify-content-between
+              mb-5
+              bg-light
+              p-5
+              rounded
+              shadow-lg
+            "
           >
             <div class="flex-grow-1">
               <h3 class="mb-0">GUVI ,Chennai</h3>
@@ -1298,7 +1352,16 @@
       <div class="row slide-in">
         <div class="col">
           <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5 bg-light p-5 rounded shadow-lg"
+            class="
+              d-flex
+              flex-column flex-md-row
+              justify-content-between
+              mb-5
+              bg-light
+              p-5
+              rounded
+              shadow-lg
+            "
           >
             <div class="flex-grow-1">
               <h3 class="mb-0">Anna University,Chennai</h3>
@@ -1315,7 +1378,16 @@
       <div class="row slide-in">
         <div class="col">
           <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5 bg-light p-5 rounded shadow-lg"
+            class="
+              d-flex
+              flex-column flex-md-row
+              justify-content-between
+              mb-5
+              bg-light
+              p-5
+              rounded
+              shadow-lg
+            "
           >
             <div class="flex-grow-1">
               <h3 class="mb-0">St.Joseph's Boys HSS , Coonoor</h3>
@@ -1331,7 +1403,16 @@
       <div class="row slide-in">
         <div class="col">
           <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5 bg-light p-5 rounded shadow-lg"
+            class="
+              d-flex
+              flex-column flex-md-row
+              justify-content-between
+              mb-5
+              bg-light
+              p-5
+              rounded
+              shadow-lg
+            "
           >
             <div class="flex-grow-1">
               <h3 class="mb-0">St.Joseph's Boys HSS , Coonoor</h3>
@@ -1392,40 +1473,38 @@
             </li>
           </ul>
         </div>
-      </section></template
-    >
+      </section>
+    </template>
     <!-- Interests--><template>
       <section class="row mb-5 pop-in">
         <div
           class="col resume-section-content fade-in bg-light p-5 rounded shadow"
         >
-          <h2 class="mb-5 text-center">
-            Interests
-          </h2>
+          <h2 class="mb-5 text-center">Interests</h2>
           <p class="h4">
             Apart from being a web developer 👨‍💻, I enjoy playing Guitar 🎸. I
             also like to play football ⚽. When indoors i enjoy playing chess ♟️
             , video games🎮 and reading books 📚.
           </p>
         </div>
-      </section></template
-    >
+      </section>
+    </template>
     <!-- contact -->
     <template>
       <div class="row">
         <div class="col text-center">
-          <h2 style="margin: 1em;" class="purple-outline shadow-lg rounded">
+          <h2 style="margin: 1em" class="purple-outline shadow-lg rounded">
             Contact me : +91-9488835026
           </h2>
-          <h5 style="margin: 1em;">OR</h5>
-          <h2 style="margin: 1em;" class="purple-outline shadow-lg rounded">
+          <h5 style="margin: 1em">OR</h5>
+          <h2 style="margin: 1em" class="purple-outline shadow-lg rounded">
             Mail me@: johnfrancis95815@gmail.com
           </h2>
         </div>
       </div>
       <div class="row mb-5">
         <div class="col text-center">
-          <h2 style="margin: 1em;">More ways to follow me:</h2>
+          <h2 style="margin: 1em">More ways to follow me:</h2>
           <div class="social-icons">
             <div class="social-icon btn pop-in" id="linkedin-profile">
               <i class="fab fa-linkedin-in"></i>
