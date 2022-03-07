@@ -78,7 +78,7 @@ function socialIconListners() {
   });
   $("#ig-profile").on("click", function (event) {
     event.preventDefault();
-    window.open("https://www.instagram.com/munchkin_.man/", "instagram");
+    window.open("https://www.instagram.com/hai_zuhn_buhg/", "instagram");
   });
   $("#github-profile").on("click", function (event) {
     event.preventDefault();
