@@ -50,6 +50,10 @@ $(function () {
 function showAllProj() {
   $(".proj").show();
 }
+function showDS() {
+  $(".proj").hide();
+  $(".ds").show();
+}
 function showFS() {
   $(".proj").hide();
   $(".fs").show();
