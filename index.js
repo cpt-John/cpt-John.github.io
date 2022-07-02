@@ -74,6 +74,9 @@ function showAnd() {
 function clickProjBtn() {
   $("#proj-btn").click();
 }
+function clickSkillsBtn() {
+  $("#skills-btn").click();
+}
 
 function socialIconListners() {
   //social icons
