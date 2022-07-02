@@ -1,6 +1,7 @@
 let current = 0;
 let comments = null;
-$(function () {
+$(async function () {
+  await appendComponents();
   populateComments();
   let temp = $("template");
   let displayWindow = $("#main-window");
@@ -160,4 +161,74 @@ function addComment() {
   let body = { name, comment };
   xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
   xhr.send(JSON.stringify(body));
+}
+
+async function appendComponents() {
+  const template_files = [
+    "about",
+    "projects",
+    "skills",
+    "experience",
+    "education",
+    "awards",
+    "interests",
+    "contact",
+  ];
+  async function loadPage(url, parent) {
+    await $.ajax({
+      url,
+      dataType: "text",
+      success: function (data) {
+        $(parent).append(data);
+      },
+    });
+  }
+  for (const file_name_ of template_files) {
+    const file_name = `./components/${file_name_}.html`;
+    await loadPage(file_name, "body");
+  }
+}
+
+const certificates = [
+  "https://www.kaggle.com/learn/certification/johnfrancis1995/data-cleaning",
+  "https://www.freecodecamp.org/certification/fcc7b4d9420-b76f-43cd-9da6-03efd9d1641d/data-analysis-with-python-v7",
+  "https://www.freecodecamp.org/certification/fcc7b4d9420-b76f-43cd-9da6-03efd9d1641d/scientific-computing-with-python-v7",
+  "https://www.guvi.in/verify-certificate?id=457RQ9I416w3vY381P",
+  "https://www.coursera.org/account/accomplishments/verify/79LWEGZ8SL9E",
+  "https://www.coursera.org/account/accomplishments/verify/UBPRY2J433Z9",
+  "https://www.coursera.org/account/accomplishments/verify/QZNGHBVH3Z5P",
+  "https://www.coursera.org/account/accomplishments/verify/9MHRRQAHYK5E",
+  "https://www.guvi.in/verify-certificate?id=I1629k8s6d436F1Zg6",
+  "https://www.guvi.in/verify-certificate?id=iGH1lV8B281573h570",
+  "https://www.guvi.in/verify-certificate?id=4618Km09Z79F16D4sk",
+  "https://www.kaggle.com/learn/certification/johnfrancis1995/data-visualization",
+  "https://www.guvi.in/verify-certificate?id=16MC4A1734Q71k794X&course=data_visualization_in_python_english",
+  "https://www.guvi.in/verify-certificate?id=4v6146RE447Tb12i2C&course=matplotlibEng",
+  "https://www.kaggle.com/learn/certification/johnfrancis1995/feature-engineering",
+  "https://www.kaggle.com/learn/certification/johnfrancis1995/intermediate-machine-learning",
+  "https://www.kaggle.com/learn/certification/johnfrancis1995/intro-to-machine-learning",
+  "https://www.guvi.in/verify-certificate?id=x778J31o9050qB65s4&course=introduction_to_data_engineering_and_bigdata_english",
+  "https://www.guvi.in/verify-certificate?id=6743152M3e4t5r9TF8",
+  "https://www.guvi.in/verify-certificate?id=11fue6H769q3089K4A&course=introduction-to-ml",
+  "https://www.guvi.in/verify-certificate?id=L858v19455S3a81Bmq",
+  "https://www.guvi.in/verify-certificate?id=v64p514I5l57Q78Dm2",
+  "https://www.kaggle.com/learn/certification/johnfrancis1995/pandas",
+  "https://www.kaggle.com/learn/certification/johnfrancis1995/python",
+  "https://www.guvi.in/verify-certificate?id=d79y18ip53G3E82wA2",
+];
+
+function populateCertificates() {
+  for (let index = 0; index < certificates.length; index++) {
+    const certificate_html = `<div class="carousel-item text-center ${
+      !index ? "active" : ""
+    }">
+    <img
+      style="max-width: 27em; height: 17em;"
+      src="./resources/certificate/${index + 1}.png"
+      alt="Card image cap"
+    />
+    <h5>${index + 1}/${certificates.length}</h5>
+    </div>`;
+    $("#certificates").append(certificate_html);
+  }
 }

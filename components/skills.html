@@ -1,0 +1,131 @@
+<!-- Certificates -->
+<template>
+  <div class="row">
+    <div class="col pink-bg light-cl p-4 rounded mb-5">
+      <a
+        class="carousel-control-prev"
+        href="#certificates-carousel"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#certificates-carousel"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <div
+        id="certificates-carousel"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner px-3" id="certificates"></div>
+        <script>
+          populateCertificates();
+          $(".carousel").carousel({
+            interval: 1700,
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+  <!-- Skills -->
+  <div class="row bg-light p-5 rounded shadow-lg mb-3">
+    <div class="col">
+      <h2 class="mb-3">Programming Languages & Tools</h2>
+      <div class="d-flex justify-content-between flex-wrap">
+        <div class="p-3 text-center pop-in">
+          <img src="./resources/icons/python.png" alt="angular" class="tec" />
+          <p class="font-weight-bold">Python</p>
+        </div>
+        <div class="p-3 text-center pop-in">
+          <img src="./resources/icons/numpy.png" alt="angular" class="tec" />
+          <p class="font-weight-bold">Numpy</p>
+        </div>
+        <div class="p-3 text-center pop-in">
+          <img src="./resources/icons/pandas.png" alt="angular" class="tec" />
+          <p class="font-weight-bold">Pandas</p>
+        </div>
+        <div class="p-3 text-center pop-in">
+          <img src="./resources/icons/seaborn.png" alt="angular" class="tec" />
+          <p class="font-weight-bold">Seaborn</p>
+        </div>
+        <div class="p-3 text-center pop-in">
+          <img src="./resources/icons/sklearn.png" alt="angular" class="tec" />
+          <p class="font-weight-bold">Sklearn</p>
+        </div>
+        <div class="p-3 text-center pop-in">
+          <img src="./resources/icons/jupyter.png" alt="angular" class="tec" />
+          <p class="font-weight-bold">JupyterNB</p>
+        </div>
+        <div class="p-3 text-center pop-in">
+          <img src="./resources/icons/angular.png" alt="angular" class="tec" />
+          <p class="font-weight-bold">Angular</p>
+        </div>
+        <div class="p-3 text-center pop-in">
+          <img
+            src="./resources/icons/bootstrap.png"
+            alt="angular"
+            class="tec"
+          />
+          <p class="font-weight-bold">Bootstrap</p>
+        </div>
+        <div class="p-3 text-center pop-in">
+          <img src="./resources/icons/js.png" alt="angular" class="tec" />
+          <p class="font-weight-bold">JavaScript</p>
+        </div>
+        <div class="p-3 text-center pop-in">
+          <img src="./resources/icons/nodejs.png" alt="angular" class="tec" />
+          <p class="font-weight-bold">Nodejs</p>
+        </div>
+        <div class="p-3 text-center pop-in pop-in">
+          <img src="./resources/icons/html.png" alt="angular" class="tec" />
+
+          <p class="font-weight-bold">Html</p>
+        </div>
+        <div class="p-3 text-center pop-in pop-in">
+          <img src="./resources/icons/css.png" alt="angular" class="tec" />
+          <p class="font-weight-bold">Css</p>
+        </div>
+        <div class="p-3 text-center pop-in">
+          <img src="./resources/icons/ts.png" alt="angular" class="tec" />
+          <p class="font-weight-bold">TypeScript</p>
+        </div>
+        <div class="p-3 text-center pop-in">
+          <img src="./resources/icons/git.png" alt="angular" class="tec" />
+          <p class="font-weight-bold">Git</p>
+        </div>
+        <div class="p-3 text-center pop-in">
+          <img src="./resources/icons/pgsql.png" alt="angular" class="tec" />
+          <p class="font-weight-bold">Postgres SQL</p>
+        </div>
+        <div class="p-3 text-center pop-in">
+          <img src="./resources/icons/mongodb.png" alt="angular" class="tec" />
+          <p class="font-weight-bold">MongoDB</p>
+        </div>
+        <div class="p-3 text-center pop-in">
+          <img src="./resources/icons/mysql.png" alt="angular" class="tec" />
+          <p class="font-weight-bold">MySQL</p>
+        </div>
+        <div class="p-3 text-center pop-in">
+          <img src="./resources/icons/unity.png" alt="angular" class="tec" />
+          <p class="font-weight-bold">Unity3D</p>
+        </div>
+        <div class="p-3 text-center pop-in">
+          <img src="./resources/icons/ps.png" alt="angular" class="tec" />
+          <p class="font-weight-bold">PhotoShop</p>
+        </div>
+        <div class="p-3 text-center pop-in">
+          <img src="./resources/icons/blender.png" alt="angular" class="tec" />
+          <p class="font-weight-bold">Blender3D</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
