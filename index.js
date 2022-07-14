@@ -222,7 +222,7 @@ const certificates = [
 
 function populateCertificates() {
   for (let index = 0; index < certificates.length; index++) {
-    const certificate_html = `<div class="carousel-item text-center ${
+    const certificate_html = `<div class="carousel-item text-center image-container ${
       !index ? "active" : ""
     }">
     <img
@@ -230,6 +230,13 @@ function populateCertificates() {
       src="./resources/certificate/${index + 1}.png"
       alt="Card image cap"
     />
+    <div class="image-text-block tag">
+    <a href=${certificates[index]}
+      class = "btn light-cl"
+      style = "padding:0;"
+      target="_blank"
+    > <i class="fa fa-link" style="margin-right: 15px;"></i> Verify</a>
+    </div>
     <h5>${index + 1}/${certificates.length}</h5>
     </div>`;
     $("#certificates").append(certificate_html);
