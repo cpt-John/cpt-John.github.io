@@ -2,7 +2,7 @@ let current = 0;
 let comments = null;
 $(async function () {
   await appendComponents();
-  populateComments();
+  updateViews();
   let temp = $("template");
   let displayWindow = $("#main-window");
   displayWindow.append(temp[0].content.cloneNode(true));
@@ -36,14 +36,11 @@ $(async function () {
       .promise()
       .done(function () {
         current = id;
-        let clon = temp[id].content.cloneNode(true);
+        let clone = temp[id].content.cloneNode(true);
         displayWindow.html("");
-        displayWindow.append(clon);
+        displayWindow.append(clone);
 
         $("html").scrollTop(0);
-
-        if (current == temp.length - 1) socialIconListners();
-        if (current == 0) populateComments();
       });
   });
 });
@@ -77,6 +74,9 @@ function clickProjBtn() {
 function clickSkillsBtn() {
   $("#skills-btn").click();
 }
+function clickInterestsBtn() {
+  $("#interests-btn").click();
+}
 
 function socialIconListners() {
   //social icons
@@ -108,7 +108,7 @@ function socialIconListners() {
   });
 }
 
-let appUrl = "https://john-node-backend.herokuapp.com/";
+let appUrl = "https://john-portfolio-backend.herokuapp.com/";
 
 function populateComments() {
   if (comments) {
@@ -141,7 +141,7 @@ function populateComments() {
       populate(comments);
     }
   };
-  xhr.open("GET", appUrl + "getComments", true);
+  xhr.open("GET", appUrl + "comment", true);
   xhr.send();
 }
 
@@ -160,7 +160,7 @@ function addComment() {
       populateComments();
     }
   };
-  xhr.open("POST", appUrl + "setComment", true);
+  xhr.open("POST", appUrl + "comment", true);
   let body = { name, comment };
   xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
   xhr.send(JSON.stringify(body));
@@ -241,4 +241,71 @@ function populateCertificates() {
     </div>`;
     $("#certificates").append(certificate_html);
   }
+}
+
+// Chart js
+
+function createChart(data) {
+  const ctxL = document.getElementById("lineChart").getContext("2d");
+  const trafficChart = new Chart(ctxL, {
+    type: "line",
+    data: {
+      labels: data["labels"],
+      datasets: [
+        {
+          data: data["counts"],
+          backgroundColor: ["rgba(105, 0, 132, .2)"],
+          borderColor: ["rgba(200, 99, 132, .7)"],
+          borderWidth: 2,
+        },
+      ],
+    },
+    options: {
+      elements: {
+        line: {
+          tension: 0,
+        },
+      },
+      responsive: true,
+      maintainAspectRatio: false,
+      legend: {
+        display: false,
+      },
+      scales: {
+        yAxes: [
+          {
+            ticks: {
+              beginAtZero: true,
+            },
+          },
+        ],
+      },
+    },
+  });
+}
+
+function getViews() {
+  let xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function () {
+    if (this.status == 200 && this.readyState == 4) {
+      views = JSON.parse(xhr.responseText)["result"];
+      data = { labels: [], counts: [] };
+      data["labels"] = views.map((e) => e["date"]).reverse();
+      data["counts"] = views.map((e) => e["counter"]).reverse();
+      createChart(data);
+    }
+  };
+  xhr.open("GET", appUrl + "view?days=20", true);
+  xhr.send();
+}
+
+function updateViews() {
+  let xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function () {
+    if (this.status == 200 && this.readyState == 4) {
+      const response = JSON.parse(xhr.responseText);
+    }
+  };
+  xhr.open("Post", appUrl + "view", true);
+  xhr.send();
 }

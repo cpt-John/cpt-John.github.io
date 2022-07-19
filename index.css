@@ -294,3 +294,8 @@ h2 {
 .tag:hover {
   cursor: pointer;
 }
+
+.chart-wrapper {
+  border-color: blue;
+  max-height: 200px;
+}
