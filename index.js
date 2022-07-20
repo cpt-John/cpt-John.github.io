@@ -292,6 +292,7 @@ function getViews() {
       data = { labels: [], counts: [] };
       data["labels"] = views.map((e) => e["date"]).reverse();
       data["counts"] = views.map((e) => e["counter"]).reverse();
+      $("#lineChart_loading").remove();
       createChart(data);
     }
   };
