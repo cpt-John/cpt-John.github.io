@@ -3,6 +3,7 @@ let comments = null;
 $(async function () {
   await appendComponents();
   updateViews();
+  $(".background").removeClass("placeholder");
   let temp = $("template");
   let displayWindow = $("#main-window");
   displayWindow.append(temp[0].content.cloneNode(true));
@@ -222,13 +223,13 @@ const certificates = [
 
 function populateCertificates() {
   for (let index = 0; index < certificates.length; index++) {
-    const certificate_html = `<div class="carousel-item text-center image-container ${
+    const certificate_html = `<div class="placeholder carousel-item text-center image-container ${
       !index ? "active" : ""
     }">
     <img
       style="max-width: 27em; height: 17em;"
       src="./resources/certificate/${index + 1}.png"
-      alt="Card image cap"
+      alt="Loading..."
     />
     <div class="image-text-block tag">
     <a href=${certificates[index]}
