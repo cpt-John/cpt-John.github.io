@@ -223,7 +223,7 @@ const certificates = [
 
 function populateCertificates() {
   for (let index = 0; index < certificates.length; index++) {
-    const certificate_html = `<div class="placeholder carousel-item text-center image-container ${
+    const certificate_html = `<div class="placeholder_1 carousel-item text-center image-container ${
       !index ? "active" : ""
     }">
     <img
