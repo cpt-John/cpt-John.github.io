@@ -109,7 +109,7 @@ function socialIconListners() {
   });
 }
 
-let appUrl = "https://john-portfolio-backend.herokuapp.com/";
+let appUrl = "https://john-portfolio-gsoc.onrender.com/";
 
 function populateComments() {
   if (comments) {
