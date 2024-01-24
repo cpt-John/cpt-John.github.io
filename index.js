@@ -194,6 +194,7 @@ async function appendComponents() {
 }
 
 const certificates = [
+  "https://credentials.databricks.com/602bd997-f2dd-4711-8e3a-d325b03674b1#gs.3hnhbp",
   "https://www.kaggle.com/learn/certification/johnfrancis1995/data-cleaning",
   "https://www.freecodecamp.org/certification/fcc7b4d9420-b76f-43cd-9da6-03efd9d1641d/data-analysis-with-python-v7",
   "https://www.freecodecamp.org/certification/fcc7b4d9420-b76f-43cd-9da6-03efd9d1641d/scientific-computing-with-python-v7",
