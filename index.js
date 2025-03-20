@@ -224,7 +224,7 @@ const certificates = {
 
 function populateCertificates() {
   Object.entries(certificates).forEach(([key, value], index) => {
-    const certificate_html = `<div class="placeholder_1 carousel-item text-center image-container ${
+    const certificate_html = `<div class="carousel-item text-center image-container ${
       value==0 ? "active" : ""
     }">
     <img
